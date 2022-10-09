@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Kelsy Estrada's Portfolio</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,29 +25,33 @@
 <body>
 
   <!-- Add your site or application content here -->
+  
 <header>
-  <h1>Hello, I’m Kelsy. 
-    I’m a Front End Web Developer.</h1>
+  <div class="content-wrapper">
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+      </nav>
+    <div class="home-title">
+  <h1>Hello, I’m Kelsy!</h1>
   <figure>
     <a href="#">
       <img src="img/kelsy.png" alt="headshot">
     </a>
   </figure>
+   <h2>I’m a Front End Web Developer.</h2>
+  </div>
   </header>
+</div>
 
-<nav>
-<ul>
-  <li><a href="#about">About</a></li>
-  <li><a href="#skills">Skills</a></li>
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#contact">Contact Me</a></li>
-</ul>
-</nav>
-<main>
-
-  
+<main>  
 <section id="about">
-<p>
+  <div class="content-wrapper">
+<p class="about-text">
   I studied Front End Web Development with Skillcrush. 
   I spend everyday working towards making a career change 
   to a full-time front end developer. I’ve been learning in 
@@ -61,22 +65,30 @@
   solving, and leadership. In my free time, I love traveling, 
   doing yoga, and spending time with my cat Tony. 
 </p>
+</div>
 </section>
 
 <section id="skills">
+  <div class ="content-wrapper">
+    <h3 class="skills-header">Skills</h3>
 <ul>
   <li>HTML5</li>
   <li>CSS3</li>
   <li>JavaScript</li>
   <li>React</li>
   <li>Photoshop</li>
+  <li>Git</li>
   <li>GitHub</li>
   <li>Responsive Design</li>
+  <li>REST API</li>
+  <li>VS Code</li>
 </ul>
+</div>
 </section>
 
 <section id="projects">
-
+  <div class="content-wrapper">
+<h3 class="projects-header">Projects</h3>
   <div class="project">
     <figure>
       <a href="https://q3khuz.csb.app/" target="_blank"><img src="img/sticky.png" alt="Sticky Note Project"></a>
@@ -143,19 +155,21 @@
   </div>
 
 
-
+</div>
 </section>
 
 </main>
 <footer id="contact">
-
-<h2>Let's get acquainted</h2>
-
+  <div class="content-wrapper">
+<h3 class="contact-title">Let's get acquainted</h3>
+<div class="contact-info">
 <a href="mailto:kelsyguerard@gmail.com"><img src="img/envelope.png" id="envelope"
 alt="envelope icon" />kelsyguerard@gmail.com</a>
+<p>(727)453-1529</p>
+</div>
 <br>
-<h3 id="socialmedia-header">Find me Online</h3>
-<ul>
+<h3 id="social-media-title">Follow me</h3>
+<ul class="social-icons">
 <li><a href="https://twitter.com/KelsyGuerard" target=”_blank”><img src="img/twitter.png" alt="twitter icon"></a></li></ul>
 <li><a href="https://github.com/KelsyAlyssa" target=”_blank”><img src="img/github.png" alt="github icon"></a></li>
 <li><a href="https://www.linkedin.com/in/kelsy-estrada-5623b91b9/" target=”_blank”>
@@ -163,7 +177,7 @@ alt="envelope icon" />kelsyguerard@gmail.com</a>
 </ul>
 
 
-
+</div>
 </footer>
   <!-- Site Content ends here-->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

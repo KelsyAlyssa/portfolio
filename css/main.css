@@ -142,6 +142,9 @@ h4 {
   color: #453E4F;
 }
 
+.toolkit-wrapper p {
+  font-size: 1.25rem;
+}
 
 h3,
 h4 {
@@ -358,17 +361,15 @@ header h2 {
   background-color: #FFE8D6;
 }
 
-/*wonky*/
 
-.skills-wrapper p {
-  padding: 15px 0;
-  margin: 20px 0;
+.toolkit-wrapper p {
+  padding: 5px 0;
+  margin: 10px 0;
 }
 
 .skill {
   width: 100%;
 }
-/*end*/
 
 /* About */
 #about {
@@ -521,9 +522,7 @@ footer .social-icons li i {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries for Responsive Design.
    ========================================================================== */
 
    @media only screen and (min-width:768px) {
@@ -551,10 +550,6 @@ footer .social-icons li i {
       font-size: 1.25rem;
     }
   
-    h5 {
-      font-size: 1.5rem;
-    }
-  
     header nav ul li {
       font-size: 1rem;
     }
@@ -570,8 +565,8 @@ footer .social-icons li i {
       margin: 0 0 80px 0;
     }
   
-    /*#work */
-    #work {
+    /*#projects */
+    #projects {
       padding-top: 80px;
     }
   
@@ -595,7 +590,7 @@ footer .social-icons li i {
       margin-top: 80px;
     }
   
-    .portfolio-header {
+    .projects-header {
       margin: 0 0 60px 0;
     }
   
@@ -608,23 +603,19 @@ footer .social-icons li i {
     }
   
     #skills {
-      padding-top: 80px;
+      padding-top: 40px;
     }
   
     .skills-header {
       margin-bottom: 40px;
     }
   
-    #skills h4 {
+    #skills h3 {
       margin: 40px 0 20px 0;
     }
   
-    .about-info h3 {
+    .about h3 {
       margin: 80px 0;
-    }
-  
-    .about-info h4 {
-      margin: 0 0 60px 0;
     }
   
     .about-text {
@@ -647,7 +638,6 @@ footer .social-icons li i {
     }
   
     header nav {
-      /* keep if using hamburger menu */
       display: flex;
       justify-content: center;
       width: 100%;
@@ -655,7 +645,6 @@ footer .social-icons li i {
     }
   
     header nav ul {
-      /* keep if using hamburger menu */
       display: flex;
       justify-content: space-between;
       width: 80%;
@@ -676,7 +665,7 @@ footer .social-icons li i {
       justify-content: space-around;
     }
   
-    .home-portfolio-piece {
+    .project {
       width: 45%;
       align-items: center;
     }
@@ -685,8 +674,7 @@ footer .social-icons li i {
       width: 95%;
     }
   
-    .language-wrapper,
-    .tool-wrapper {
+    .toolkit-wrapper {
       display: flex;
       justify-content: space-evenly;
       width: 100%;
@@ -694,29 +682,25 @@ footer .social-icons li i {
       text-transform: uppercase;
     }
   
-    .skill,
-    .tool {
-      /*  width: auto; */
+    .skill {
       width: 45%;
     }
   
-    .language-wrapper p,
-    .tool-wrapper p {
-      padding: 15px 0;
+    .toolkit-wrapper p {
+      padding: 5px 0;
     }
   
-    /* about */
     .about-content-wrapper {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
     }
   
-    #about figure {
+    .home-title figure {
       width: 60%;
     }
   
-    .about-info h4 {
+    .about h3 {
       text-align: left;
     }
   
@@ -747,9 +731,6 @@ footer .social-icons li i {
       font-size: 2rem;
     }
   
-    footer .copyright {
-      width: 100%;
-    }
   }
   
   @media only screen and (min-width:1024px) {
@@ -788,31 +769,22 @@ footer .social-icons li i {
       font-size: 1.25rem;
     }
   
-    h5 {
-      font-size: 1.5rem;
-    }
-  
     .about-info h3 {
       font-size: 3.75rem;
       text-align: left;
-    }
-  
-    .about-info h4 {
-      font-size: 2rem;
     }
   
     p {
       font-size: 1.25rem;
     }
   
-    .project-link,
-    .language-wrapper p,
-    .tool-wrapper p {
+    .project-link {
       font-size: 1rem;
     }
+
   
     /* element margins */
-    /* the list element have 20px of bottom margin already */
+  
     header {
       padding-top: 80px;
       padding-bottom: 140px;
@@ -822,12 +794,12 @@ footer .social-icons li i {
       margin-bottom: 80px;
     }
   
-    #work {
+    #projects {
       padding-top: 80px;
     }
   
     #skills {
-      padding-bottom: 120px;
+      padding-bottom: 40px;
     }
   
     #about {
@@ -843,7 +815,7 @@ footer .social-icons li i {
       margin: 40px 0 0 0;
     }
   
-    .portfolio-header {
+    .projects-header {
       margin: 0 0 60px 0;
     }
   
@@ -856,7 +828,7 @@ footer .social-icons li i {
     }
   
     #skills {
-      padding-top: 120px;
+      padding-top: 40px;
     }
   
     #skills .content-wrapper {
@@ -869,10 +841,6 @@ footer .social-icons li i {
   
     .about-info h3 {
       margin: 0;
-    }
-  
-    .about-info h4 {
-      margin: 40px 0;
     }
   
     .about-text {
@@ -917,14 +885,12 @@ footer .social-icons li i {
       max-width: 70%;
     }
   
-    /* portfolio */
-    .home-portfolio-piece {
+  
+    .project {
       width: 30%;
     }
   
-    /* skills */
-    .skill,
-    .tool {
+    .skill {
       width: 30%;
     }
   
@@ -934,7 +900,7 @@ footer .social-icons li i {
       justify-content: space-between;
     }
   
-    #about figure {
+    .home-title figure {
       width: 35%;
       margin-top: 0;
     }

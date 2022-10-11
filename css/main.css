@@ -714,7 +714,12 @@ footer a:hover {
     .about h3 {
       text-align: left;
     }
-  
+
+    #about a:hover {
+      color: #EC91C4;
+    }
+ 
+
     /* Footer */
     .contact-wrapper {
       display: flex;

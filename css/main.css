@@ -94,9 +94,9 @@ html {
 
 body {
   font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
-  color: #453E4F;
-  background-color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #351D77;
+  background-color: #eee4f0;
 }
 
 ul {
@@ -106,21 +106,21 @@ ul {
 }
 
 a {
-  color: #453E4F;
+  color: #351D77;
   text-decoration: none;
 }
 
 h1 {
-  color: #453E4F;
-  font-family: 'Alike', serif;
+  color: #351D77;
+  font-family: 'Alata', sans-serif;
   font-size: 1.75rem;
   line-height: 1.5;
   width: 100%
 }
 
 h2 {
-  color: #453E4F;
-  font-family: 'Alike', serif;
+  color: #351D77;
+  font-family: 'Alata', sans-serif;
   font-size: 1.25rem;
   line-height: 1.5;
   width: 100%;
@@ -128,10 +128,12 @@ h2 {
 }
 
 h3 {
+  font-family: 'Alata', sans-serif;
   font-size: 1.75rem;
 }
 
 h4 {
+  font-family: 'Alata', sans-serif;
   font-size: 1.25rem;
 }
 
@@ -139,7 +141,7 @@ h4 {
 .project-link {
   text-transform: uppercase;
   font-size: 1.125rem;
-  color: #453E4F;
+  color: #EC91C4;
 }
 
 .toolkit-wrapper p {
@@ -148,7 +150,7 @@ h4 {
 
 h3,
 h4 {
-  font-family: 'Alike', serif;
+  font-family: 'Alata', sans-serif;
   line-height: 1.5;
   width: 100%
 }
@@ -286,7 +288,7 @@ figure {
 /* -------------------- Base Header Styles -------------------- */
 
 header {
-  background-color: #ffe8d6;
+  background-color: #eee4f0;
 }
 
 header nav ul li {
@@ -294,6 +296,12 @@ header nav ul li {
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+nav ul li a:hover,
+nav #contact-link:hover {
+  background-color: #EC91C4;
+  color: black;
 }
 
 nav ul {
@@ -343,22 +351,27 @@ header h2 {
 .project figure {
   width: 100%;
   filter: drop-shadow(1px 2px 6px lightgrey);
+  border: 2px solid transparent;
+}
+
+.project figure:hover {
+  border: 2px solid #F4BEDC;
 }
 
 .project-link {
-  background-color: #453E4F;
+  background-color: #EC91C4;
   padding: .75rem 3.75rem;
   border-radius: 30px;
   color: #FFFFFF;
 }
 
 .project-link:hover {
-  background-color: #CAC4D1;
-  color: #453E4F;
+  background-color: #F4BEDC;
+  color: white;
 }
 
 #skills {
-  background-color: #FFE8D6;
+  background-color: #eee4f0;
 }
 
 
@@ -382,13 +395,13 @@ header h2 {
 
 #about h3,
 #about p {
-  color: #4a4f3e;
+  color: #351D77;
 }
 
 /* -------------------- Base Header Styles -------------------- */
-/* wonky*/
+
 footer {
-  background-color: #FFE8D6;
+  background-color: #eee4f0;
 }
 
 footer .contact-wrapper {
@@ -401,7 +414,6 @@ footer .contact-wrapper {
 footer .contact-info {
   width: 60%;
 }
-
 
 footer .follow-section {
   display: flex;
@@ -428,14 +440,13 @@ footer .social-icons li {
 
 footer .social-icons li i {
   font-size: 1.875rem;
-  color: #453e4f;
+  color: #351D77;
 }
 
-/*wonky*/
-
-
-
-
+footer .social-icons li i:hover,
+footer a:hover {
+  color: #EC91C4;
+}
 
 
 
@@ -871,8 +882,8 @@ footer .social-icons li i {
   
     nav ul li a:hover,
     nav #contact-link:hover {
-      background-color: #F8C6C6;
-      color: #453E4F;
+      background-color: #EC91C4;
+      color: black;
       padding: 10px 10px;
       border-radius: 30px;
     }

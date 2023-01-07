@@ -200,6 +200,7 @@ footer {
   text-align: left;
 }
 
+
 h1,
 h2,
 h3,
@@ -706,6 +707,7 @@ footer a:hover {
       justify-content: center;
       flex-flow: row wrap;
     }
+
   
     .home-title figure {
       width: 60%;

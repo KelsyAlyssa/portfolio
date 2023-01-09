@@ -194,10 +194,14 @@ footer {
   width: 85%;
 }
 
-#projects p,
-#about p {
+#projects {
   width: 100%;
   text-align: left;
+}
+
+#about p {
+width: 70%;
+margin: auto;
 }
 
 
